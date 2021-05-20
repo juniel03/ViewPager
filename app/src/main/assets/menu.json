@@ -1,0 +1,22 @@
+{
+  "menu":[
+    {
+      "Category":"Burgers",
+      "items":[
+        "b1", "b2", "b3","b4", "b5"
+      ]
+    },
+    {
+      "Category":"Chicken",
+      "items":[ "c1", "c2", "c3","c4", "c5"]
+    },
+    {
+      "Category":"float",
+      "items":[ "f1", "f2", "f3","f4", "f5"]
+    },
+    {
+      "Category":"fckers",
+      "items":[ "fck1", "fck2", "fck3","fck4", "fck5"]
+    }
+  ]
+}
