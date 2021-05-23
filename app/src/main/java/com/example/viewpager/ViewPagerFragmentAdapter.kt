@@ -9,18 +9,13 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import org.json.JSONObject
 
 
-class ViewPagerFragmentAdapter(var menuItems: ArrayList<Menu> ,var items: ArrayList<ArrayList<String>> ,fragmentManager: FragmentManager, lifecycle: Lifecycle): FragmentStateAdapter(fragmentManager,lifecycle) {
+class ViewPagerFragmentAdapter(var menuItems: ArrayList<Menu>,fragmentManager: FragmentManager, lifecycle: Lifecycle): FragmentStateAdapter(fragmentManager,lifecycle) {
 
-
-
-
-    override fun getItemCount(): Int = items.size
+    override fun getItemCount(): Int = menuItems.size
 
     override fun createFragment(position: Int): Fragment = FragmentItems().apply {
         arguments = bundleOf(
-            "menu" to menuItems[position],
-            "list" to items[position],
-            "position" to position
+            "menu" to menuItems[position]
         )
     }
 }
